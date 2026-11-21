@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Do Powerful Countries Lose Wars Against Weaker Opponents? | Group 6</title>
+<meta name="description" content="Asymmetric warfare, IR theories, and lessons from Afghanistan (2001–2021). Group 6, SOCS 1102: Global Perspectives.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1424;--bg2:#101c31;--card:#14223a;--line:#243452;--tx:#e6ebf4;--mut:#93a1ba;--blue:#6f9bd1;--red:#c8453f;--serif:"Source Serif 4",Georgia,serif;--sans:"IBM Plex Sans",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 var(--sans)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;opacity:.5;background:radial-gradient(circle,#24365a 1px,transparent 1.4px) 0 0/26px 26px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(11,20,36,.92);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:20px;padding:0 24px;height:52px}
+nav b{font:700 15px var(--serif);white-space:nowrap}
+nav .links{display:flex;gap:16px;overflow-x:auto;scrollbar-width:none;font-size:13px}
+nav .links a{color:var(--mut);text-decoration:none;white-space:nowrap;padding:4px 0;border-bottom:2px solid transparent}
+nav .links a:hover,nav .links a.on{color:var(--tx);border-color:var(--red)}
+section{padding:96px 24px}
+.w{max-width:1040px;margin:0 auto}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+h1,h2,h3{font-family:var(--serif);line-height:1.15}
+h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}
+h3{font-size:21px;margin-bottom:8px}
+.lead{color:var(--mut);max-width:680px;margin-bottom:40px;font-size:18px}
+.sec-no{color:var(--red);font:600 14px var(--sans);margin-bottom:8px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px}
+.card p,.card li{color:var(--mut);font-size:15px}
+.card ul{padding-left:18px}
+.cite{color:var(--blue);font-size:13px}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:110px}
+.hero svg.map{position:absolute;right:-6%;top:50%;transform:translateY(-50%);width:min(780px,90vw);opacity:.35;pointer-events:none}
+.hero h1{font-size:clamp(36px,6.4vw,72px);max-width:880px;margin-bottom:20px;animation:rise 1s both}
+.hero .sub{font-size:clamp(17px,2vw,22px);color:var(--blue);max-width:680px;margin-bottom:28px}
+.hero .meta{color:var(--mut);margin-bottom:6px}
+.names{display:flex;flex-wrap:wrap;gap:8px 22px;margin:14px 0 36px;font-weight:500}
+.names span{border-left:2px solid var(--red);padding-left:10px}
+.btn{display:inline-block;background:var(--red);color:#fff;border:0;padding:13px 26px;border-radius:4px;font:600 15px var(--sans);cursor:pointer;text-decoration:none;transition:background .2s}
+.btn:hover{background:#a93832}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--tx)}
+.scroll{position:absolute;bottom:26px;left:50%;width:22px;height:36px;border:2px solid var(--mut);border-radius:12px}
+.scroll::after{content:"";position:absolute;left:50%;top:6px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--red);animation:dot 1.6s infinite}
+@keyframes dot{60%{transform:translateY(12px);opacity:0}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}}
+details{background:var(--card);border:1px solid var(--line);border-radius:6px;margin-bottom:12px}
+summary{cursor:pointer;padding:16px 20px;font:600 17px var(--serif);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--red);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details>div{padding:0 20px 18px;color:var(--mut);font-size:15px}
+.sub-h{font:600 15px var(--sans);color:var(--blue);margin:36px 0 14px}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch;margin-bottom:28px}
+.vs .mid{align-self:center;color:var(--red);font:italic 700 22px var(--serif)}
+.tl{position:relative;display:flex;gap:0;margin-bottom:20px}
+.tl::before{content:"";position:absolute;left:0;right:0;top:15px;height:2px;background:var(--line)}
+.tl button{flex:1;background:none;border:0;color:var(--mut);text-align:left;cursor:pointer;position:relative;padding:34px 10px 0 0;font:500 15px var(--sans)}
+.tl button::before{content:"";position:absolute;top:8px;left:0;width:16px;height:16px;border-radius:50%;background:var(--bg2);border:2px solid var(--mut);transition:.2s}
+.tl button.on{color:var(--tx)}
+.tl button.on::before{background:var(--red);border-color:var(--red);transform:scale(1.2)}
+.tl button b{display:block;font:700 19px var(--serif);color:var(--tx)}
+#tlbox{min-height:130px;border-left:3px solid var(--red)}
+.stat{text-align:left}
+.stat .n{font:700 clamp(36px,5vw,54px)/1.05 var(--serif)}
+.stat .l{color:var(--blue);font-weight:500;margin:6px 0 6px}
+.bar{height:6px;border-radius:3px;background:var(--line);margin-top:14px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--red);width:0;transition:width 1.4s}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{flex:1;min-width:180px;background:var(--card);color:var(--mut);border:1px solid var(--line);border-top:3px solid var(--line);padding:16px;text-align:left;cursor:pointer;font:600 17px var(--serif);border-radius:4px}
+.tabs button small{display:block;font:400 13px var(--sans);margin-top:2px}
+.tabs button.on{color:var(--tx);background:#182a47}
+.tabs button[data-c=r].on{border-top-color:var(--red)}
+.tabs button[data-c=l].on{border-top-color:var(--blue)}
+.tabs button[data-c=p].on{border-top-color:#b79a5b}
+.pane{display:none;border-radius:6px}
+.pane.on{display:block;animation:rise .4s}
+.pane .grid{margin-top:18px}
+.pane .core{font-size:18px;color:var(--tx);max-width:760px}
+.concl{text-align:center;position:relative;overflow:hidden}
+.concl blockquote{font:italic 600 clamp(26px,4.4vw,46px)/1.25 var(--serif);max-width:860px;margin:44px auto 0;padding-top:34px;border-top:2px solid var(--red)}
+.concl .lead{margin-inline:auto}
+.quiz{max-width:760px;margin:0 auto}
+.prog{display:flex;justify-content:space-between;color:var(--mut);font-size:14px;margin-bottom:8px}
+.pbar{height:4px;background:var(--line);margin-bottom:26px}
+.pbar i{display:block;height:100%;background:var(--red);transition:width .4s}
+.q{font:600 22px/1.35 var(--serif);margin-bottom:20px}
+.opt{display:flex;gap:14px;width:100%;text-align:left;background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:5px;padding:14px 16px;margin-bottom:10px;font:15px/1.5 var(--sans);cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--blue)}
+.opt b{color:var(--blue)}
+.opt.ok{border-color:#4a9b73;background:#142f2a}
+.opt.no{border-color:var(--red);background:#331a22}
+.fb{margin:16px 0;padding:14px 16px;border-left:3px solid var(--blue);background:var(--card);color:var(--mut);font-size:15px}
+.score{font:700 64px var(--serif);text-align:center}
+.rev{margin:22px 0;padding:0;list-style:none}
+.rev li{padding:12px 0;border-top:1px solid var(--line);font-size:15px}
+.rev li small{color:var(--mut);display:block}
+.refs{list-style:none;padding:0}
+.refs li{padding:12px 0 12px 28px;text-indent:-28px;border-bottom:1px solid var(--line);font-size:15px;color:var(--mut)}
+.refs i{color:var(--tx)}
+footer{border-top:1px solid var(--line);padding:44px 24px 24px;text-align:center;color:var(--mut);font-size:14px}
+footer .names{justify-content:center;margin:12px 0 28px}
+footer small{display:block;font-size:11.5px;opacity:.55}
+.hide{display:none!important}
+@media(max-width:760px){.tl{flex-direction:column}.tl::before{left:7px;right:auto;top:0;bottom:0;width:2px;height:auto}.tl button{padding:0 0 22px 32px}.tl button::before{top:3px}.vs{grid-template-columns:1fr}.vs .mid{text-align:center}nav b{display:none}section{padding:72px 18px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav aria-label="Main">
+<b>Group 6</b>
+<div class="links">
+<a href="#intro">Introduction</a><a href="#theory">Theory</a><a href="#afghanistan">Afghanistan</a><a href="#data">Data</a><a href="#coin">COIN</a><a href="#perspectives">IR perspectives</a><a href="#analysis">Analysis</a><a href="#solutions">Solutions</a><a href="#conclusion">Conclusion</a><a href="#quiz">Quiz</a><a href="#references">References</a>
+</div>
+</nav>
+
+<header class="hero" id="top">
+<svg class="map" viewBox="0 0 600 400" aria-hidden="true" fill="none" stroke="#6f9bd1" stroke-width=".7">
+<g opacity=".5"><path d="M0 100h600M0 200h600M0 300h600M100 0v400M200 0v400M300 0v400M400 0v400M500 0v400"/><ellipse cx="300" cy="200" rx="290" ry="190"/><ellipse cx="300" cy="200" rx="150" ry="190"/></g>
+<path stroke-width="1.2" d="M96 104l36-18 52 6 28 24-14 30 22 28-18 36-38-8-26-40-24-26zM292 86l44-10 70 8 62 22 30 36-28 24-44-6-30 22-34-14-26-34-22-18zM304 190l36 10 18 44-12 56-32 24-18-48 4-52zM448 238l36-8 34 26-14 34-40 4z"/>
+<circle cx="404" cy="146" r="22" stroke="#c8453f" stroke-width="1.4"/><circle cx="404" cy="146" r="4" fill="#c8453f" stroke="none"/>
+<path d="M404 146L130 90M404 146L320 60" stroke="#c8453f" stroke-dasharray="3 5" opacity=".7"/>
+</svg>
+<div class="w">
+<p class="meta">Group 6 | SOCS 1102: Global Perspectives</p>
+<h1>Why Do Powerful Countries Lose Wars Against Weaker Opponents?</h1>
+<p class="sub">Asymmetric Warfare, IR Theories, and Lessons from Afghanistan (2001–2021)</p>
+<div class="names"><span>Ayan İbadzada</span><span>Mövlan İsmayılzada</span><span>Emil Bagirov</span><span>Vusal Shahbuzlu</span></div>
+<a class="btn" href="#intro">Explore the Research</a>
+</div>
+<div class="scroll" aria-hidden="true"></div>
+</header>
+
+<section id="intro"><div class="w">
+<p class="sec-no">Introduction</p>
+<h2>The paradox of asymmetric war</h2>
+<p class="lead">Superior firepower and defense budgets no longer guarantee political victory in the 21st century.</p>
+<div class="vs">
+<div class="card"><h3>Conventional war</h3><p>Uniformed state armies fight recognisable forces, and battlefield strength usually decides the outcome.</p></div>
+<div class="mid">versus</div>
+<div class="card"><h3>Irregular war</h3><p>Mobile guerrillas blend into civilian populations, so the contest shifts from territory to political control.</p></div>
+</div>
+<div class="grid">
+<div class="card"><h3>What it means</h3><p><b>Asymmetrical war</b> is conflict between opponents with vastly unequal military, economic, and technological capabilities <span class="cite">(Heywood &amp; Chin, 2023)</span>.</p></div>
+<div class="card"><h3>Why power is not enough</h3><p>Military, economic, and technological superiority does not automatically become political victory, because the weaker side can change what “winning” requires.</p></div>
+<div class="card"><h3>Global relevance</h3><p>The same pattern keeps recurring for powerful states, from Vietnam to Afghanistan, which makes it central to how we read world politics today.</p></div>
+</div>
+</div></section>
+
+<section id="theory" class="alt"><div class="w">
+<p class="sec-no">Theoretical framework</p>
+<h2>How power is understood</h2>
+<p class="lead">Open each concept to see how our course frames it.</p>
+<p class="sub-h">A. The limits of power</p>
+<details open><summary>Power as capability vs. relational power</summary><div>Material resources such as troops, GDP, and weapons do not automatically translate into the ability to change an opponent’s behavior <span class="cite">(Heywood &amp; Chin, 2023)</span>. Capability is what you own on paper; relational power is whether others actually do what you want.</div></details>
+<details><summary>Hard power vs. soft power (Joseph Nye)</summary><div>Hard power is military force and coercion. Soft power is legitimacy, trust, and attraction. Coercion fails when moral authority is lost, and bombing cannot force a population to trust a foreign army <span class="cite">(Freedman, 2022)</span>.</div></details>
+<details><summary>Asymmetry of motivation (Mack, 1975)</summary><div>Superpowers fight limited wars of choice, while insurgents fight total wars for survival. This is the “strength of the weak”: the weaker side is willing to outlast the superpower’s patience <span class="cite">(Mack, 1975; Stoker, 2019)</span>.</div></details>
+<details><summary>Limited wars vs. total wars</summary><div>For a distant superpower the war is a policy choice that can be ended. For local fighters it is about survival and homeland, so they accept costs the intervener will not.</div></details>
+<p class="sub-h">B. New wars and weapon limitations</p>
+<details><summary>Mary Kaldor’s “New Wars” thesis</summary><div>Modern conflicts blur the divide between combatants and civilians, a form of “war amongst the people”, and mix war, politics, and local identity <span class="cite">(Heywood &amp; Chin, 2023)</span>.</div></details>
+<details><summary>Post-Clausewitzian warfare</summary><div>Victory depends on breaking political will rather than winning set-piece battles. A superpower can win every engagement and still lose the war of endurance.</div></details>
+<details><summary>Limits of high-tech weapons and WMD</summary><div>Nuclear weapons and heavy bombs are unusable or counterproductive in guerrilla warfare <span class="cite">(Arreguín-Toft, 2001)</span>. Advanced technology cannot find an enemy who looks like a civilian.</div></details>
+</div></section>
+
+<section id="afghanistan"><div class="w">
+<p class="sec-no">Case study</p>
+<h2>The war in Afghanistan (2001–2021)</h2>
+<p class="lead">Select a milestone to read what happened and why it mattered.</p>
+<div class="tl" role="tablist" id="tl"></div>
+<div class="card" id="tlbox" aria-live="polite"></div>
+</div></section>
+
+<section id="data" class="alt"><div class="w">
+<p class="sec-no">Data</p>
+<h2>Resource asymmetry</h2>
+<p class="lead">The imbalance in resources ran heavily in one direction, and the outcome ran the other way.</p>
+<div class="grid">
+<div class="card stat"><div class="n">~$<span data-to="2.3" data-d="1">0</span> trillion</div><div class="l">Financial cost</div><p>Spent by the U.S. (Watson Institute data).</p><div class="bar"><i data-w="100"></i></div></div>
+<div class="card stat"><div class="n"><span data-to="130000">0</span>+</div><div class="l">Military gap</div><p>Peak coalition troops with drones and air supremacy, against a low-cost rural Taliban insurgency.</p><div class="bar"><i data-w="85"></i></div></div>
+<div class="card stat"><div class="n">~<span data-to="241000">0</span></div><div class="l">Human cost</div><p>Total lives lost, including over 71,000 civilians.</p><div class="bar"><i data-w="30"></i></div></div>
+<div class="card stat"><div class="n" style="font-size:40px">IEDs</div><div class="l">Asymmetric tactics</div><p>Along with local terrain and cross-border sanctuaries in Pakistan, used to outlast U.S. patience.</p></div>
+</div>
+<div class="card" style="margin-top:20px;border-left:3px solid var(--red)"><h3>What the numbers show</h3><p>Money, troops, and technology were overwhelmingly on one side, yet the gap in resources never produced a gap in political results. The costs fell on civilians and on the intervener’s patience, while the insurgents’ cheap methods were sustainable for decades.</p></div>
+</div></section>
+
+<section id="coin"><div class="w">
+<p class="sec-no">Why it failed</p>
+<h2>Why counter-insurgency failed</h2>
+<p class="lead">Counter-insurgency (COIN) tried to “clear, hold, and build” to win local support. It was undermined by weaknesses that firepower could not repair.</p>
+<div class="grid">
+<div class="card"><h3>Limits of COIN</h3><p>Foreign militaries cannot easily solve an inherently political struggle for local legitimacy <span class="cite">(Heywood &amp; Chin, 2023)</span>.</p></div>
+<div class="card"><h3>Institutional fragility</h3><p>Billions in foreign aid fueled systemic corruption, and projects were built on unrealistic timelines <span class="cite">(SIGAR, 2021)</span>.</p></div>
+<div class="card"><h3>A dependent partner army</h3><p>The Afghan army relied on U.S. contractors and air support, and it collapsed once that support left <span class="cite">(Collins, 2023)</span>.</p></div>
+<div class="card"><h3>Civilian alienation</h3><p>Airstrikes and night raids caused civilian casualties, driving rural populations toward the insurgency <span class="cite">(UNAMA, 2021)</span>.</p></div>
+</div>
+</div></section>
+
+<section id="perspectives" class="alt"><div class="w">
+<p class="sec-no">Three IR perspectives</p>
+<h2>Reading the defeat through three lenses</h2>
+<p class="lead">Each theory explains a different part of the same failure.</p>
+<div class="tabs" role="tablist" id="ptabs">
+<button data-c="r" data-p="pr" class="on">Realism<small>Strategic over-reach</small></button>
+<button data-c="l" data-p="pl">Liberalism<small>Erosion of soft power</small></button>
+<button data-c="p" data-p="pp">Postcolonialism<small>Resistance and sovereignty</small></button>
+</div>
+<div class="pane on" id="pr"><p class="core">States act in an anarchic self-help system and must prioritize core national security.</p>
+<div class="grid"><div class="card"><h3>Imperial over-reach</h3><p>Paul Kennedy’s argument: draining economic and military strength on peripheral wars weakens the hegemon.</p></div><div class="card"><h3>Mission creep</h3><p>The focus shifted from a narrow security goal (al-Qaeda) to unrealistic ideological state-building <span class="cite">(Manela, 2022)</span>.</p></div><div class="card"><h3>Outcome</h3><p>Trillions spent abroad drained resources at home, and domestic war fatigue forced an eventual retreat.</p></div></div></div>
+<div class="pane" id="pl"><p class="core">International law, institutional legitimacy, and cooperation sustain global order.</p>
+<div class="grid"><div class="card"><h3>Loss of soft power</h3><p>Joseph Nye’s concept: drone strikes, Guantánamo Bay, and civilian collateral damage destroyed U.S. moral authority.</p></div><div class="card"><h3>Jus in bello</h3><p>Unjust conduct during war undermined the initial moral justification (jus ad bellum) <span class="cite">(Heywood &amp; Chin, 2023)</span>.</p></div><div class="card"><h3>The trap</h3><p>Night raids and drone strikes eroded local trust and undermined the promotion of democracy.</p></div></div></div>
+<div class="pane" id="pp"><p class="core">Global politics reflects historical power hierarchies between the Global North and Global South.</p>
+<div class="grid"><div class="card"><h3>Neo-colonial perception</h3><p>Western “state-building” was experienced locally as foreign occupation, echoing imperial history.</p></div><div class="card"><h3>Nationalist mobilization</h3><p>Imposing centralized Western models ignored tribal structures, letting insurgents present themselves as defenders of sovereignty <span class="cite">(Manela, 2022)</span>.</p></div><div class="card"><h3>Local sovereignty</h3><p>Foreigners cannot engineer legitimacy from outside; the “hearts and minds” approach fails when a government looks like a foreign puppet <span class="cite">(Hazelton, 2017)</span>.</p></div></div></div>
+</div></section>
+
+<section id="analysis"><div class="w">
+<p class="sec-no">Critical analysis</p>
+<h2>Global implications and tensions</h2>
+<p class="lead">Three tensions follow from the Afghan defeat.</p>
+<div class="grid">
+<div class="card"><h3>Capability vs. outcome</h3><p>High-tech military supremacy cannot compensate for a lack of local political legitimacy.</p></div>
+<div class="card"><h3>Erosion of unipolarity</h3><p>Protracted asymmetric defeats expose the limits of U.S. global hegemony <span class="cite">(Heywood &amp; Chin, 2023)</span>.</p></div>
+<div class="card"><h3>Transition to multipolarity</h3><p>Rising powers such as China gain economic and diplomatic leverage while superpowers overextend militarily.</p></div>
+</div>
+</div></section>
+
+<section id="solutions" class="alt"><div class="w">
+<p class="sec-no">Solutions</p>
+<h2>Realistic and ethical pathways</h2>
+<p class="lead">Three shifts would help powerful states avoid the same traps.</p>
+<div class="grid">
+<div class="card" style="border-top:3px solid var(--blue)"><h3>Smart power and limited objectives</h3><p>Replace open-ended nation-building with narrow, realistic political bargains <span class="cite">(Hazelton, 2017)</span>, combining security tools with diplomacy and local legitimacy.</p></div>
+<div class="card" style="border-top:3px solid var(--blue)"><h3>Multilateralism over unilateralism</h3><p>Empower the UN and regional neighbors to close cross-border sanctuaries diplomatically, and share the burden of intervention.</p></div>
+<div class="card" style="border-top:3px solid var(--blue)"><h3>Strict jus in bello and accountability</h3><p>Minimize civilian harm and tie financial aid to strict anti-corruption benchmarks.</p></div>
+</div>
+</div></section>
+
+<section id="conclusion" class="concl"><div class="w">
+<p class="sec-no">Conclusion</p>
+<h2>What the Afghan case teaches</h2>
+<p class="lead">Powerful countries do not necessarily lose because they lack military resources. They lose when they confuse military capability with political legitimacy, overextend their objectives, and ignore local sovereignty.</p>
+<blockquote>“In asymmetric warfare, true strength is knowing the limits of your power.”</blockquote>
+</div></section>
+
+<section id="quiz" class="alt"><div class="w quiz">
+<p class="sec-no">Audience quiz</p>
+<h2>Test your understanding</h2>
+<p class="lead">Five questions based on the presentation.</p>
+<div id="qbox" class="card"></div>
+</div></section>
+
+<section id="references"><div class="w">
+<p class="sec-no">References</p>
+<h2>References (APA 7th Edition)</h2>
+<ul class="refs">
+<li>Arreguín-Toft, I. (2001). How the weak win wars: A theory of asymmetric conflict. <i>International Security, 26</i>(1), 93–128.</li>
+<li>Collins, J. J. (2023). Defeat in Afghanistan: An autopsy. <i>Parameters, 53</i>(1), 7–24.</li>
+<li>Freedman, L. (2022). Why war fails: Russia’s invasion of Ukraine and the limits of military power. <i>Foreign Affairs, 101</i>(4), 10–23.</li>
+<li>Hazelton, J. L. (2017). The “hearts and minds” fallacy: Violence, coercion, and success in counterinsurgency warfare. <i>International Security, 42</i>(1), 80–113.</li>
+<li>Heywood, A., &amp; Chin, C. (2023). <i>Global politics</i> (3rd ed.). Bloomsbury Academic.</li>
+<li>Mack, A. (1975). Why big nations lose small wars: The politics of asymmetric conflict. <i>World Politics, 27</i>(2), 175–200.</li>
+<li>Manela, E. (2022). From the jaws of retreat: Vietnam, Afghanistan, and the persistence of American ambition. <i>Foreign Affairs, 101</i>(1), 140–151.</li>
+<li>Special Inspector General for Afghanistan Reconstruction. (2021). <i>What we need to learn: Lessons from twenty years of Afghanistan reconstruction</i>. U.S. Government.</li>
+<li>Stoker, D. (2019). <i>Why America loses wars: Limited war and US strategy from the Korean War to the present</i>. Cambridge University Press.</li>
+<li>United Nations Assistance Mission in Afghanistan. (2021). <i>Afghanistan: Protection of civilians in armed conflict — Annual report 2020</i>. United Nations. https://unama.unmissions.org/</li>
+</ul>
+</div></section>
+
+<footer>
+<div>Group 6 &nbsp;|&nbsp; SOCS 1102 — Global Perspectives</div>
+<div class="names"><span>Ayan İbadzada</span><span>Mövlan İsmayılzada</span><span>Emil Bagirov</span><span>Vusal Shahbuzlu</span></div>
+<small>Designed &amp; developed by @negrrizz</small>
+</footer>
+
+<script>
+(function(){
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+
+/* Timeline */
+var ev=[
+{d:"Oct 2001",t:"Invasion after 9/11",x:"U.S. and NATO forces invade after 9/11, and the Taliban regime is toppled within weeks. It looked like a quick victory, but it left open the question of what should replace the regime."},
+{d:"2003–2014",t:"Mission expands",x:"The mission expands from counterterrorism to protracted nation-building, the mission creep that realists warn against (Manela, 2022)."},
+{d:"2009–2011",t:"The surge",x:"The Obama administration deploys 30,000 extra troops as part of a “Surge” / COIN strategy, betting that more force could win local support."},
+{d:"Aug 2021",t:"Withdrawal and collapse",x:"The U.S. withdraws, and the Western-backed Afghan government collapses in 11 days, showing how dependent it was on foreign support (Collins, 2023)."}];
+var tl=$("#tl"),tb=$("#tlbox");
+function pick(i){$$("button",tl).forEach(function(b,j){b.classList.toggle("on",i===j);b.setAttribute("aria-selected",i===j)});tb.innerHTML="<h3>"+ev[i].d+": "+ev[i].t+"</h3><p>"+ev[i].x+"</p>"}
+ev.forEach(function(e,i){var b=document.createElement("button");b.setAttribute("role","tab");b.innerHTML="<b>"+e.d+"</b>"+e.t;b.onclick=function(){pick(i)};tl.appendChild(b)});
+pick(0);
+
+/* IR tabs */
+$$("#ptabs button").forEach(function(b){b.onclick=function(){$$("#ptabs button").forEach(function(x){x.classList.toggle("on",x===b)});$$(".pane").forEach(function(p){p.classList.toggle("on",p.id===b.dataset.p)})}});
+
+/* Counters and bars */
+function count(el){var to=+el.dataset.to,dec=+el.dataset.d||0,t0=null;function f(t){t0=t0||t;var p=Math.min((t-t0)/1500,1),v=to*(1-Math.pow(1-p,3));el.textContent=dec?v.toFixed(dec):Math.round(v).toLocaleString("en-US");if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var ds=$("#data");
+function runStats(){$$("[data-to]",ds).forEach(count);$$(".bar i",ds).forEach(function(i){i.style.width=i.dataset.w+"%"})}
+if("IntersectionObserver" in window){new IntersectionObserver(function(e,o){if(e[0].isIntersecting){runStats();o.disconnect()}},{threshold:.3}).observe(ds)}else{runStats()}
+
+/* Active nav link */
+var links=$$(".links a");
+if("IntersectionObserver" in window){var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})}})},{rootMargin:"-45% 0px -50% 0px"});$$("section").forEach(function(s){so.observe(s)})}
+
+/* Quiz (questions and answer key from the group's quiz PDF) */
+var Q=[
+{q:"According to Donald Stoker's distinction between limited and total war, why do weaker insurgents often outlast a superpower?",o:["They have larger conventional armies and more advanced technology.","They fight for survival, whereas a distant superpower treats the war as a policy choice.","They receive continuous funding from international organizations.","They avoid blending in with local communities."],a:1,e:"Limited vs. Total War (Stoker, 2019): insurgents fight for survival, while a distant superpower treats war as a policy choice."},
+{q:"In the Afghanistan case study, what major weakness did Joseph Collins identify in the Afghan military?",o:["A shortage of local recruits willing to join the army.","Heavy reliance on U.S. air support and foreign contractors.","Lack of modern rifles and basic uniforms.","Refusal to fight outside of major cities."],a:1,e:"Dependent Partner Army & COIN Failure (Collins, 2023): the army relied on U.S. air power and contractors, and fell apart when they left."},
+{q:"Which theoretical perspective highlights that local residents may view foreign troops through past imperial history and resist them as occupiers?",o:["Liberalism","Postcolonialism","Realism","Multilateralism"],a:1,e:"Postcolonialism, Sovereignty & Resistance (Heywood & Chin, 2023): Western state-building was experienced locally as foreign occupation."},
+{q:"How did frequent night raids and drone strikes in Afghanistan hurt the liberal goals of the intervention?",o:["They lowered the overall financial cost of the war.","They damaged local trust and moral authority by harming civilians.","They eliminated the need for local political negotiations.","They immediately ended regional border conflicts."],a:1,e:"Liberalism, Soft Power & Jus in bello (Heywood & Chin, 2023): harming civilians eroded trust and moral authority."},
+{q:"What strategy is recommended instead of relying purely on hard military power in future asymmetric conflicts?",o:["Smart power combined with clear, limited goals.","Unlimited troop surges until complete regime change occurs.","Unilateral military action without regional partners.","Large-scale nation-building projects in every district."],a:0,e:"Smart Power & Realistic Objectives (Heywood & Chin, 2023; Stoker, 2019): combine security with diplomacy and set narrow goals."}];
+var qb=$("#qbox"),i=0,score=0,picks=[],L="ABCD";
+function show(){
+var c=Q[i];
+qb.innerHTML='<div class="prog"><span>Question '+(i+1)+' of 5</span><span>Score: '+score+'</span></div><div class="pbar"><i style="width:'+(i/5*100)+'%"></i></div><p class="q"></p><div id="os"></div><div id="fb"></div><button class="btn hide" id="nx"></button>';
+$(".q",qb).textContent=c.q;
+c.o.forEach(function(t,k){var b=document.createElement("button");b.className="opt";b.innerHTML="<b>"+L[k]+")</b><span></span>";$("span",b).textContent=t;b.onclick=function(){answer(k)};$("#os").appendChild(b)});
+}
+function answer(k){
+var c=Q[i],bs=$$(".opt",qb),good=k===c.a;
+picks[i]=k;if(good)score++;
+bs.forEach(function(b,j){b.disabled=true;if(j===c.a)b.classList.add("ok");else if(j===k)b.classList.add("no")});
+$("#fb").innerHTML='<div class="fb"><b>'+(good?"Correct. ":"Incorrect. ")+'</b>The right answer is '+L[c.a]+'. '+c.e+'</div>';
+var n=$("#nx");n.textContent=i<4?"Next Question":"See Results";n.classList.remove("hide");n.focus();
+n.onclick=function(){i++;i<5?show():end()};
+}
+function end(){
+var h='<div class="pbar"><i style="width:100%"></i></div><p class="prog"><span>Quiz complete</span></p><div class="score">'+score+' / 5</div><p style="text-align:center;color:var(--mut)">'+(score===5?"Perfect score.":score>=3?"Solid understanding of the argument.":"Review the sections above and try again.")+'</p><ul class="rev">';
+Q.forEach(function(c,k){h+='<li><b>'+(k+1)+'. </b>'+(picks[k]===c.a?"Correct":"Incorrect")+'<small>Your answer: '+L[picks[k]]+') · Correct answer: '+L[c.a]+') '+c.o[c.a].replace(/</g,"&lt;")+'</small></li>'});
+qb.innerHTML=h+'</ul><button class="btn" id="rs">Restart Quiz</button>';
+$("#rs").onclick=function(){i=0;score=0;picks=[];show()};
+}
+show();
+})();
+</script>
+</body>
+</html>
